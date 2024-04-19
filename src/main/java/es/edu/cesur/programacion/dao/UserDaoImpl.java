@@ -81,5 +81,7 @@ public class UserDaoImpl implements UserDao {
 		int deleteCount = deleteStmt.executeUpdate();
 		System.out.println("Se han eliminado " + deleteCount + " registros" );
 	}
+	
+	
 
 }

@@ -5,6 +5,7 @@ import java.util.List;
 
 import es.edu.cesur.programacion.dao.UserDao;
 import es.edu.cesur.programacion.dao.UserDaoImpl;
+import es.edu.cesur.programacion.database.DatabaseConnection;
 import es.edu.cesur.programacion.model.User;
 
 /**
@@ -81,6 +82,10 @@ public class UserService {
 		} catch (Exception e) {
 			System.out.println("Error al eliminar el usuario: " + e.getMessage());
 		}
+	}
+	
+	public void clouseConn() {
+		DatabaseConnection.closeConnection();
 	}
 
 }
